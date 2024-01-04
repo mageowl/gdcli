@@ -1,6 +1,6 @@
 function gdcli
 	set script_args "[\"$(string join -n '","' $argv[2..-1])\"]"
-	set script_body (cat $argv[1])
+	set script_body (cat $argv[1] | string collect)
 
 	touch /tmp/gdcli.gd
 	string replace "{{args}}" $script_args $_gdcli_base_script > /tmp/gdcli.gd

@@ -1,6 +1,6 @@
 function _gdcli_install --on-event gdcli_install
 	set -U _gdcli_base_script "
-class_name GDCli extends MainLoop
+class_name GDCli extends SceneTree
 const ARGS = {{args}}
 "
 end
