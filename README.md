@@ -2,4 +2,4 @@
 
 Install with fisher.
 
-`>_ fisher install mageowl/gdcli`
+`> fisher install mageowl/gdcli`
